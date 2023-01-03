@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Sprite Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: -1102004191398159597, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+    - {fileID: -2857140873498505081, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+    - {fileID: 6202530992726310884, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+    - {fileID: -1657436721446290172, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+    - {fileID: -2027049768793005140, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+    - {fileID: -2234864919927766682, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+    totalSpriteSurfaceArea: 7229
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -2234864919927766682, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+  - {fileID: -2027049768793005140, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+  - {fileID: -1657436721446290172, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+  - {fileID: 6202530992726310884, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+  - {fileID: -1102004191398159597, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+  - {fileID: -2857140873498505081, guid: 65a09be8a32889947b4bfba7be9342b6, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Screenshot_1_33
+  - Screenshot_1_32
+  - Screenshot_1_31
+  - Screenshot_1_30
+  - Screenshot_1_28
+  - Screenshot_1_29
+  m_RenderDataMap: {}
+  m_Tag: New Sprite Atlas
+  m_IsVariant: 0
