@@ -19,6 +19,7 @@ namespace MVCMPlatformer
             {
                 if (Sleep) return;
                 Counter += Time.captureDeltaTime * Speed;
+
                 if(Loop)
                 {
                     while (Counter> Sprites.Count)
