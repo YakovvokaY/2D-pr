@@ -6,6 +6,7 @@ namespace MVCMPlatformer
 {
     public class PlayerController 
     {
+        #region filds
         private AnimConfig _config;
         private SpriteAnimController _playerAnimator;
         private ContactPooler _contactPooler;
@@ -31,7 +32,10 @@ namespace MVCMPlatformer
         private float _yVelocity;
         private float _xVelocity;
 
-        public PlayerController(LevelObjectView player)
+        private int _health = 100;
+        #endregion 
+
+        public PlayerController(InteractiveObjectViev player)
         {
             _config = Resources.Load<AnimConfig>("SpriteAnimCFG");
             _playerAnimator = new SpriteAnimController(_config);
@@ -40,6 +44,13 @@ namespace MVCMPlatformer
             _playerT = player._transform;
             _rb = player._rb;
             _contactPooler = new ContactPooler(_plaerView._collider);
+
+            player.TakeDamage += TakeBullet;
+        }
+
+        public void TakeBullet(DamageView bullet)
+        {
+            _health -= bullet.DamagePoint;
         }
 
         private void MoveTowards()
@@ -50,6 +61,13 @@ namespace MVCMPlatformer
         }
         public void Update()
         {
+            if(_health<=0)
+            {
+                _health = 0;
+                _plaerView._spriteRenderer.enabled = false;
+                _plaerView.gameObject.SetActive(false);
+            }
+
             _playerAnimator.Update();
             _contactPooler.Update();
             _xAxisInput = Input.GetAxis("Horizontal");

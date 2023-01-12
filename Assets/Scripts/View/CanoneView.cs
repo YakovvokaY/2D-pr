@@ -7,6 +7,6 @@ namespace MVCMPlatformer
     {
         public Transform _muzzleT;
         public Transform _emitterT;
-        public List <LevelObjectView> _bullets;
+        public List <DamageView> _bullets;
     }
 }
